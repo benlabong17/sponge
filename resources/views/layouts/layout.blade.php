@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <title>SPONGE - Surat Perintah Kerja Online Generator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -13,7 +14,7 @@
     <!-- DataTables -->
     <link href="{{ asset('plugins/datatables/jquery.dataTables.min.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('plugins/datatables/responsive.bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('plugins/datatables/dataTables.bootstrap.min.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('plugins/datatables/dataTables.bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
 
 
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
@@ -21,9 +22,9 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  </head>
+</head>
 
-  <body class="fixed-left">
+<body class="fixed-left">
     <!-- Begin page -->
     <div id="wrapper">
 
@@ -61,40 +62,40 @@
                                 <ul class="dropdown-menu dropdown-menu-lg">
                                     <li class="text-center notifi-title">Notification <span class="badge badge-xs badge-success">3</span></li>
                                     <li class="list-group">
-                                       <!-- list item-->
-                                       <a href="javascript:void(0);" class="list-group-item">
-                                          <div class="media">
-                                             <div class="media-heading">Your order is placed</div>
-                                             <p class="m-0">
-                                               <small>Dummy text of the printing and typesetting industry.</small>
-                                             </p>
-                                          </div>
-                                       </a>
-                                       <!-- list item-->
+                                        <!-- list item-->
                                         <a href="javascript:void(0);" class="list-group-item">
-                                          <div class="media">
-                                             <div class="media-body clearfix">
-                                                <div class="media-heading">New Message received</div>
+                                            <div class="media">
+                                                <div class="media-heading">Your order is placed</div>
                                                 <p class="m-0">
-                                                   <small>You have 87 unread messages</small>
+                                                    <small>Dummy text of the printing and typesetting industry.</small>
                                                 </p>
-                                             </div>
-                                          </div>
+                                            </div>
                                         </a>
                                         <!-- list item-->
                                         <a href="javascript:void(0);" class="list-group-item">
-                                          <div class="media">
-                                             <div class="media-body clearfix">
-                                                <div class="media-heading">Your item is shipped.</div>
-                                                <p class="m-0">
-                                                   <small>It is a long established fact that a reader will</small>
-                                                </p>
-                                             </div>
-                                          </div>
+                                            <div class="media">
+                                                <div class="media-body clearfix">
+                                                    <div class="media-heading">New Message received</div>
+                                                    <p class="m-0">
+                                                        <small>You have 87 unread messages</small>
+                                                    </p>
+                                                </div>
+                                            </div>
                                         </a>
-                                       <!-- last list item -->
+                                        <!-- list item-->
                                         <a href="javascript:void(0);" class="list-group-item">
-                                          <small class="text-primary">See all notifications</small>
+                                            <div class="media">
+                                                <div class="media-body clearfix">
+                                                    <div class="media-heading">Your item is shipped.</div>
+                                                    <p class="m-0">
+                                                        <small>It is a long established fact that a reader will</small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- last list item -->
+                                        <a href="javascript:void(0);" class="list-group-item">
+                                            <small class="text-primary">See all notifications</small>
                                         </a>
                                     </li>
                                 </ul>
@@ -152,12 +153,13 @@
                         </li>
 
                         <li class="has_sub">
-                          <a href="javascript:void(0);" class="waves-effect"><i class="ti-write"></i><span> Forms </span><span class="pull-right"><i class="mdi mdi-plus"></i></span></a>
-                          <ul class="list-unstyled">
-                              <li><a href="{{ route('input-working-order') }}">Input Working Order</a></li>
-                              <li><a href="#">Input Progress</a></li>
-                          </ul>
-                      </li>
+                            <a href="javascript:void(0);" class="waves-effect"><i class="ti-write"></i><span> Forms </span><span class="pull-right"><i class="mdi mdi-plus"></i></span></a>
+                            <ul class="list-unstyled">
+                                <li><a href="{{ route('input-working-order') }}">Pelaporan</a></li>
+                                <li><a href="#">Approval</a></li>
+                                <li><a href="#">Engineer</a></li>
+                            </ul>
+                        </li>
 
                         <li class="has_sub">
                             <a href="javascript:void(0);" class="waves-effect"><i class="ti-agenda"></i> <span> Laporan </span> <span class="pull-right"><i class="mdi mdi-plus"></i></span></a>
@@ -192,21 +194,21 @@
 
         <div class="content-page">
             <!-- Start content -->
-            <div class="content">  
+            <div class="content">
                 <div class="container">
 
                     <!-- Page-Title -->
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="page-header-title">
-                              @yield('auth')
+                                @yield('auth')
                             </div>
                         </div>
                     </div>
-                  </div> <!-- container -->
-                  @yield('content')
-                </div> <!-- content -->
-            <footer class="footer">  
+                </div> <!-- container -->
+                @yield('content')
+            </div> <!-- content -->
+            <footer class="footer">
                 SPONGE - Surat Perintah Online Generator PLN Ungaran
             </footer>
         </div>
@@ -216,6 +218,7 @@
 
 
     <!-- jQuery  -->
+
     <script src="{{ asset('js/jquery.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js/modernizr.min.js') }}"></script>
@@ -229,6 +232,7 @@
     <script src="{{ asset('js/jquery.scrollTo.min.js') }}"></script>
 
     <script src="{{ asset('plugins/jquery-sparkline/jquery.sparkline.min.js') }}"></script>
+    @yield('script')
 
     <!-- Datatables-->
     <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
@@ -239,7 +243,8 @@
     <script src="{{ asset('pages/dashborad.js') }}"></script>
     <script src="{{ asset('js/app2.js') }}"></script>
 
-  </body>
+</body>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </html>
